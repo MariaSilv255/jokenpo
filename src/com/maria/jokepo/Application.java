@@ -8,22 +8,23 @@ import com.maria.model.JogadaTipo;
 
 public class Application {
 	public static void main(String[] args) {
+		
 		System.out.println("===JOKENPÔ===");
-
-		Player player = jogadarPlayer();
+		Scanner sc = new Scanner(System.in);
+		Player player = jogadaPlayer(sc);
 		Player computador = jogadarComputador();
 		
 		Regras regras = new Regras();
-		System.out.println(regras.regrasJogo(player, computador));
+		System.out.println("==="+regras.regrasJogo(player, computador)+"===");;
+		sc.close();
 	}
 	
-	public static Player jogadarPlayer () {
-		Scanner sc = new Scanner(System.in);
-		
+	public static Player jogadaPlayer (Scanner sc) {
+	
 		System.out.println("Escolha (PEDRA, PAPEL, TESOURA)??");
 		String playerJoga = sc.nextLine().toUpperCase();
 		Player player = new Player(JogadaTipo.valueOf(playerJoga));
-		sc.close();
+	
 		
 		return player;
 	}
