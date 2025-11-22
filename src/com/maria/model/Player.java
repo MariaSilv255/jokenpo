@@ -1,5 +1,6 @@
 package com.maria.model;
 
+
 public class Player {
 
 	private final JogadaTipo jogada;
@@ -9,8 +10,11 @@ public class Player {
 	}
 
 	public JogadaTipo getJogada() {
+		
 		return jogada;
 	}
+	
+	
 	
 	@Override
 	public String toString() {
