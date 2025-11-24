@@ -1,5 +1,5 @@
 # Jokenpô (Pedra, Papel e Tesoura)
-Este projeto é uma implementação simples do clássico jogo **Jokenpô** utilizando Java. O objetivo principal foi aplicar conceitos POO logica.
+Este projeto é uma implementação simples do clássico jogo **Jokenpô** utilizando Java. O objetivo principal foi aplicar conceitos POO logica e testes unitarios.
 
 ## Funcionalidades
 - Escolha entre **Pedra**, **Papel** ou **Tesoura**
