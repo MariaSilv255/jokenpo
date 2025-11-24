@@ -1,23 +1,18 @@
-# Jokenpô: Pedra, Papel e Tesoura (Java)
-Este projeto é uma implementação simples do clássico jogo Jokenpô (Pedra, Papel e Tesoura) desenvolvida em Java. O objetivo principal foi aplicar conceitos de Programação Orientada a Objetos (POO) e lógica de programação para criar um jogo de console interativo onde o jogador compete contra o computador.
-
-O projeto utiliza uma estrutura modular, separando a lógica de aplicação (Application.java) das regras do jogo (Regras.java) e dos modelos de dados (Player.java, JogadaTipo.java, Resultado.java).
+# Jokenpô (Pedra, Papel e Tesoura)
+Este projeto é uma implementação simples do clássico jogo **Jokenpô** utilizando Java. O objetivo principal foi aplicar conceitos POO logica.
 
 ## Funcionalidades
+- Escolha entre **Pedra**, **Papel** ou **Tesoura**
+- Resultado automático: vitória, derrota ou empate
+- Validação de entrada do usuário
+- Testes unitários com **JUnit 5**
 
-•
-Jogo Interativo: O jogador insere sua jogada via console.
+## Testes (JUnit 5)
+Os testes incluem:
+- Verificação de vitória, derrota e empate  
+- Validação de entradas inválidas
 
-•
-Oponente Computador: O computador escolhe sua jogada de forma aleatória.
-
-•
-Lógica de Regras: Implementação clara das regras do Jokenpô para determinar o vencedor.
-
-•
-Estrutura Orientada a Objetos: Utilização de classes e enums para representar os elementos do jogo.
-
-## Estrutura de pasta
+## Estrutura do Projeto
 ```
 Jokenpo/
 │
@@ -27,37 +22,34 @@ Jokenpo/
 │                     ├─ Regras.java        # Classe com as regras do jogos
 │                    
 │    ├─ com.maria.jokenpo.model/
-│                     ├─ Player.java      # Classe representando o jogador
-│                     ├─ JogadaTipo.java  # enum representando as jogadas
-│                     ├─ Resultado.java   # enum representando os tipos de resultado 
+│                     ├─ Player.java        # Classe representando o jogador
+│                     ├─ JogadaTipo.java    # enum representando as jogadas
+│                     ├─ Resultado.java     # enum representando os tipos de resultado 
 │   └─ test.java/
-│               ├─ RegrasTest.java      # Classe test das regras
-│               ├─ ValidacaoTest.java   # Classe test da validacao de entrada
-└─ README.md                           # Documentação do projeto
+│               ├─ RegrasTest.java          # Classe test das regras
+│               ├─ ValidacaoTest.java       # Classe test da validacao de entrada
+└─ README.md                                # Documentação do projeto
 ```
 
-## Tecnologias usadas
+## Tecnologias Utilizadas
+- Java 17+
+- JUnit 5
 
-Java 17+
-JUnit 5
-Eclipse 
+## Conceitos Aplicados
+- Programação Orientada a Objetos (POO)
+- Uso de enum para representar tipos de jogadas
+- Uso de Map para definir regras de vitória
+- Testes unitários com JUnit 5
+- Validação de entrada do usuário
 
-## Testes Unitários (JUnit 5)
+## Importar o projeto
+Baixe o eclipse IDE
 
-Os testes garantem:
-
-✔ Todas as combinações possíveis de vitória
-✔ Todas as derrotas
-✔ Todos os empates
-✔ Entradas inválidas
-✔ Entradas com espaços e variação de caixa
-## Como jogar
-Compile e execute a classe Application.java.
-Insira sua jogada no console:
-• PEDRA
-• PAPEL
-• TESOURA
-
-O computador fará sua jogada e o resultado será exibido no console.
+Após baixá-lo selecione as opções:
+ 
+Selecione o caminho onde o projeto foi clonado
+```
+File > Import > General > Existing Projects into Workspace
+```
 
 Projeto desenvolvido como parte dos estudos em Java e testes unitários.
