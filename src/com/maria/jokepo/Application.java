@@ -33,7 +33,7 @@ public class Application {
 	public static JogadaTipo validarJogada(String entrada) {
 
 		try {
-			return JogadaTipo.valueOf(entrada.toUpperCase());
+			return JogadaTipo.valueOf(entrada.toUpperCase().trim());
 		} catch (IllegalArgumentException e) {
 
 			System.out.println("#################################");

@@ -36,6 +36,21 @@ Jokenpo/
 └─ README.md                           # Documentação do projeto
 ```
 
+## Tecnologias usadas
+
+Java 17+
+JUnit 5
+Eclipse 
+
+## Testes Unitários (JUnit 5)
+
+Os testes garantem:
+
+✔ Todas as combinações possíveis de vitória
+✔ Todas as derrotas
+✔ Todos os empates
+✔ Entradas inválidas
+✔ Entradas com espaços e variação de caixa
 ## Como jogar
 Compile e execute a classe Application.java.
 Insira sua jogada no console:
@@ -45,3 +60,4 @@ Insira sua jogada no console:
 
 O computador fará sua jogada e o resultado será exibido no console.
 
+Projeto desenvolvido como parte dos estudos em Java e testes unitários.
